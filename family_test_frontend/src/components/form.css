@@ -1,0 +1,30 @@
+/* FamilyTestForm.css */
+.bg-custom {
+    background-image: url(''); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container {
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 14px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* form.css */
+.btn-green-700 {
+    background-color: #2f855a; /* Example shade of green */
+    border-color: #2f855a;
+    color: white;
+}
+
+.btn-green-700:hover {
+    background-color: #276749; /* Darker shade for hover effect */
+    border-color: #276749;
+}

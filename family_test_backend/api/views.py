@@ -10,8 +10,12 @@ class FamilyTestView(APIView):
         results = []
 
         for patient_sample in patients:
-            # Check if the patient sample is a substring of the virus pattern
-            result = 'Positive' if patient_sample in virus_pattern else 'Negative'
+            if not patient_sample:
+                result = None  # Set result to null if the sample is empty
+            else:
+                # Check if the patient sample is a substring of the virus pattern
+                result = 'Positive' if patient_sample in virus_pattern else 'Negative'
+            
             results.append(result)
             
             # Save the result in the database

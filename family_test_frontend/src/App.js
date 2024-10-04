@@ -1,6 +1,6 @@
 import React from 'react';
 import FamilyTestForm from './components/FamilyTestForm';
-// import FamilyTestForm from './components/FamilyTestForm';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
     return (
